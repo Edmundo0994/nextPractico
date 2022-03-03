@@ -8,8 +8,7 @@
   position: fixed;
   top: 0;
   background: white;
-  width: calc(100% - 50px);
-  z-index: 100;
+  z-index: 1;
   width: 100%;
 }
 .menu {
@@ -32,6 +31,9 @@
 }
 .navbar-left ul {
   margin-left: 12px;
+}
+.navbar-right li:first-of-type{
+  margin-right: 1em;
 }
 .navbar-left ul li a,
 .navbar-right ul li a {

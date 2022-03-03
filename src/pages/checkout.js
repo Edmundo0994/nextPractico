@@ -4,7 +4,7 @@ import OrderItem from '@components/OrderItem'
 import styles from '@styles/Checkout.module.scss'
 
 const Checkout = () => {
-	return (
+  return (
     <>
       <Head>
         <title>Checkout</title>
@@ -25,7 +25,7 @@ const Checkout = () => {
         </div>
       </div>
     </>
-	);
+  )
 }
 
-export default Checkout;
+export default Checkout

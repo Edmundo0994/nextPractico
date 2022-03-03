@@ -11,6 +11,7 @@
       "@icons/*": ["assets/icons/*"],
       "@logos/*": ["assets/logos/*"],
       "@context/*": ["context/*"],
+      "@public/*": ["public/*"],
     }
   }
 }

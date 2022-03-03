@@ -3,6 +3,7 @@ import Image from 'next/image';
 import AppContext from '@context/AppContext';
 import addToCartImage from '@icons/bt_add_to_cart.svg';
 import addedToCartImage from '@icons/bt_added_to_cart.svg';
+import nonfoto  from '@public/nonfoto.jpg';
 import styles from '@styles/ProductItem.module.scss';
 
 const ProductItem = ({ product }) => {
@@ -15,12 +16,20 @@ const ProductItem = ({ product }) => {
 
 	return (
 		<div className={styles.ProductItem}>
-			<Image 
-        src={product?.images[0]} 
-        alt={product?.title}
-        width={240}
-        height={240}
-      />
+      {product.images.length > 1 && product.images[0] !== ''
+      ? <Image 
+          src={product?.images[0]} 
+          alt={product?.title}
+          width={240}
+          height={240}
+        />
+      : <Image 
+          src={nonfoto} 
+          alt={product?.title}
+          width={240}
+          height={240}
+        />
+      }
 			<div className={styles['product-info']}>
 				<div>
 					<p>${product?.price}</p>

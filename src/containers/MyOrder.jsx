@@ -19,7 +19,11 @@ const MyOrder = () => {
 		<aside className={styles.MyOrder}>
 			<div className={styles['MyOrder-container']}>
 				<div className={styles['title-container']}>
-					<Image className={styles['more-clickable-area'], styles.pointer} src={arrow} alt="arrow" onClick={() => toggleOrder()} />
+					<Image 
+            className={styles['more-clickable-area'], styles.pointer} 
+            src={arrow} alt="arrow" 
+            onClick={() => toggleOrder()} 
+          />
 					<p className={styles.title}>My order</p>
 				</div>
 				<div className={styles['my-order-content']}>
@@ -34,8 +38,10 @@ const MyOrder = () => {
 						</p>
 						<p>${sumTotal()}</p>
 					</div>
-					<Link className={styles['primary-button']} href="/checkout">
-						Checkout
+					<Link href="/checkout">
+            <p className={styles['primary-button']} onClick={() => toggleOrder()}>
+						  Checkout
+            </p>
 					</Link>
 				</div>
 			</div>
