@@ -10,8 +10,8 @@
       "@styles/*": ["styles/*"],
       "@icons/*": ["assets/icons/*"],
       "@logos/*": ["assets/logos/*"],
+      "@images/*": ["assets/images/*"],
       "@context/*": ["context/*"],
-      "@public/*": ["public/*"],
     }
   }
 }

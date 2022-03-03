@@ -3,7 +3,7 @@ import Image from 'next/image';
 import AppContext from '@context/AppContext';
 import addToCartImage from '@icons/bt_add_to_cart.svg';
 import addedToCartImage from '@icons/bt_added_to_cart.svg';
-import nonfoto  from '@public/nonfoto.jpg';
+import nonfoto  from '@images/nonfoto.jpg';
 import styles from '@styles/ProductItem.module.scss';
 
 const ProductItem = ({ product }) => {
